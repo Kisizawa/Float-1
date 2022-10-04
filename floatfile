@@ -1,0 +1,23 @@
+package progulam1;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class Main {
+
+	public static void main(String[] args) {
+		BigDecimal bd;
+		double weight=64.5;
+	    double height=1.7;
+	    double bmi=weight/height/height;
+	  //計算結果を小数点第1位までに丸める
+	      bd = new BigDecimal(bmi);
+	      bd = bd.setScale(1, RoundingMode.HALF_UP);
+	      StringBuilder sb = new StringBuilder();
+	      
+	    System.out.println(sb.toString());
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}
